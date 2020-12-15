@@ -1,0 +1,49 @@
+:root {
+  /* Font Size */
+  --size-mega: 72px;
+  --size-Larger: 24px;
+  --size-large: 20px;
+  --size-medium: 16px;
+  --size-small: 14px;
+  --size-smaller: 12px;
+  --size-micro: 10px;
+
+  /* Font Weight */
+  --weight-extra-bold: 900;
+  --weight-bold: 500;
+  --weight-regular: 400;
+
+  /* Color */
+  --color-black: #111;
+  --color-white: #fff;
+  --color-white-greyish: #f5f5f5;
+  --color-grey: #757575;
+  --color-grey-light: #7e7e7e;
+  --color-brown: #aa8375;
+
+  /* Font Family */
+  /* 
+  Nike Futura -> Jost
+  Helvetica -> Inter
+  Helvetica Neue -> Inter
+  Nike TG -> Pragati Narrow
+  */
+  --font-futura: 'Jost', sans-serif;
+  --font-helvetica: 'Inter', sans-serif;
+  --font-tg: 'Pragati Narrow', sans-serif;
+
+  /* Space */
+  --space-wide: 48px;
+  --space-wide-semi: 24px;
+  --space-regular: 16px;
+  --space-narrow-semi: 12px;
+  --space-narrow: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
