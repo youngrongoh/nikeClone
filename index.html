@@ -6,7 +6,7 @@
     <title>Nike. Just Do it. Nike GB</title>
   </head>
   <body>
-    <header class="header">
+    <header id="main-header">
       <section class="top">
         <div class="family">
           <ul class="family__links">
@@ -64,17 +64,19 @@
       </section>
     </header>
     <main>
-      <section class="main-banner">
-        <div>
-          <video src=""></video>
+      <section id="main-banner" class="banner banner__container">
+        <div class="banner__item">
+          <div class="banner__img-wrapper">
+            <video src=""></video>
+          </div>
+          <div class="banner__caption">
+            <p class="banner__title">The perfect gift? A challenge they can't resist.</p>
+            <a href="#" class="banner__btn">Shop</a>
+          </div>
+          <a href="#" class="banner__link"></a>
         </div>
-        <div>
-          <p>The perfect gift? A challenge they can't resist.</p>
-          <a href="#">Shop</a>
-        </div>
-        <a href="#"></a>
       </section>
-      <section class="gear-up slidelist">
+      <section id="gear-up" class="slidelist">
         <header class="slidelist__header">
           <h2 class="section-title">Gear Up</h2>
           <a href="#">View All</a>
@@ -130,30 +132,32 @@
           </li>
         </ul>
       </section>
-      <section class="top-gifts">
+      <section id="top-gifts" class="banner double-banner">
         <h2 class="section-title">Top Gifts</h2>
-        <figure class="top-gifts__shop">
-          <div class="shop__imgwrapper">
-            <img src="img/top-gifts/nike-just-do-it.jpeg" alt="for kid" class="shop__img">
+        <div class="banner__container">
+        <figure class="banner__item">
+          <div class="banner__img-wrapper">
+            <img src="img/top-gifts/nike-just-do-it.jpeg" alt="for kid" class="banner__img">
           </div>
-          <figcaption class="shop__desc">
-            <p>For Little Players</p>
-            <a href="#" class="shop__btn">Shop Kids'</a>
+          <figcaption class="banner__caption">
+            <p class="banner__title">For Little Players</p>
+            <a href="#" class="banner__btn">Shop Kids'</a>
           </figcaption>
-          <a href="#" class="shop__link"></a>
+          <a href="#" class="banner__link"></a>
         </figure>
-        <figure class="top-gifts__shop">
-          <div class="shop__imgwrapper">
-            <img src="img/top-gifts/force.jpg" alt="for player" class="shop__img">
+        <figure class="banner__item">
+          <div class="banner__img-wrapper">
+            <img src="img/top-gifts/force.jpg" alt="for player" class="banner__img">
           </div>
-          <figcaption class="shop__desc">
-            <p>For Top Players</p>
-            <a href="#" class="shop__btn">Shop</a>
+          <figcaption class="banner__caption">
+            <p class="banner__title">For Top Players</p>
+            <a href="#" class="banner__btn">Shop</a>
           </figcaption>
-          <a href="#" class="shop__link"></a>
+          <a href="#" class="banner__link"></a>
         </figure>
+      </div>
       </section>
-      <section class="trending-now slidelist">
+      <section id="trending-now" class="slidelist">
         <header class="slidelist__header">
           <h2 class="section-title">Trending Now</h2>
         </header>
@@ -214,6 +218,25 @@
             </a>
           </li>
         </ul>
+      </section>
+      <section id="just-in" class="banner">
+        <h2 class="section-title">Just In</h2>
+        <div class="banner__container">
+          <figure class="banner__item">
+            <div class="banner__img-wrapper">
+              <img src="img/just-in/nike-just-do-it.jpg" alt="Air Jordan 11 'Jubilee'" class="banner__img">
+            </div>
+            <figcaption class="banner__caption">
+              <p class="banner__title-sub">Future Meets Familiar</p>
+              <p class="banner__title">AIR JORDAN 11 'JUBILEE'</p>
+              <div>
+                <a href="#" class="banner__btn">Shop</a>
+                <a href="#" class="banner__btn">Shop Jordan</a>
+              </div>
+            </figcaption>
+            <a href="#" class="banner__link"></a>
+          </figure>
+        </div>
       </section>
     </main>
   </body>
