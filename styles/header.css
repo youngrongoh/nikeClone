@@ -1,0 +1,32 @@
+#sub-header {
+  background-color: var(--color-white-greyish);
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38px;
+}
+
+.family__links {
+  display: flex;
+}
+
+.family__link {
+  padding-left: 12px;
+  padding-right: 5px;
+}
+
+.family__logo {
+  width: 24px;
+  height: 24px;
+}
+
+.quick {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.quick__link {
+  padding: 4px 8px;
+}
