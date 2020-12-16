@@ -1,10 +1,19 @@
+.limiter {
+  margin: auto;
+  max-width: 1808px;
+}
+
 #sub-header {
   background-color: var(--color-white-greyish);
   height: 36px;
+  padding: 0 38px;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 38px;
+  height: 100%;
 }
 
 .family__links {
@@ -123,12 +132,11 @@
 #slide-banner {
   background-color: var(--color-white-greyish);
   height: 58px;
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .slide-banner__announcement {
+  position: relative;
   font-size: var(--size-smaller);
   width: 100%;
   display: flex;

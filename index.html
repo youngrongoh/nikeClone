@@ -11,7 +11,8 @@
   <body>
     <header id="main-header">
       <section id="sub-header">
-        <div class="family">
+        <div class="header-container limiter">        
+          <div class="family">
           <ul class="family__links">
             <li class="family__link">
               <a href="#">
@@ -24,16 +25,17 @@
               </a>
             </li class="family__link">
           </ul>
-        </div>
-        <div class="quick">
-          <a href="#" class="quick__link">Help</a>
-          <span>|</span>
-          <a href="#" class="quick__link">Join Us</a>
-          <span>|</span>
-          <a href="#" class="quick__link">Sign in</a>
+          </div>
+          <div class="quick">
+            <a href="#" class="quick__link">Help</a>
+            <span>|</span>
+            <a href="#" class="quick__link">Join Us</a>
+            <span>|</span>
+            <a href="#" class="quick__link">Sign in</a>
+          </div>
         </div>
       </section>
-      <nav id="navbar">
+      <nav id="navbar" class="limiter">
         <a href="#" class="navbar__home">
           <img src="img/nike-logo.svg" alt="logo" class="navbar__logo" />
         </a>
@@ -69,22 +71,24 @@
         </div>
       </nav>
       <section id="slide-banner">
-        <div class="slide-banner__announcement current">
-          <p>Please order as early as possible to ensure that your orders arrive in time for your holiday celebrations.</p>
-          <a href="#" class="slide-banner__link">Shop</a>
-          <a href="#" class="slide-banner__link">Get Help</a>
-        </div>
-        <div class="slide-banner__announcement next">
-          <p>We’ve extended our returns period to 60 days.</p>
-          <a href="#">Learn more</a>
+        <div class="header-container limiter">
+          <div class="slide-banner__announcement current">
+            <p>Please order as early as possible to ensure that your orders arrive in time for your holiday celebrations.</p>
+            <a href="#" class="slide-banner__link">Shop</a>
+            <a href="#" class="slide-banner__link">Get Help</a>
+          </div>
+          <div class="slide-banner__announcement next">
+            <p>We’ve extended our returns period to 60 days.</p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
       </section>
     </header>
     <main id="contents">
       <section id="main-banner" class="banner banner__container">
         <div class="banner__item">
-          <div class="banner__img-wrapper">
-            <video src=""></video>
+          <div class="banner__wrapper">
+            <video class="banner__video" src="videos/main-banner.webm" type="video/webm" poster="videos/main-banner-poster.jpg" loop muted="muted" playsinline="playsinline" preload="auto" autoplay></video>
           </div>
           <div class="banner__caption">
             <p class="banner__title">The perfect gift? A challenge they can't resist.</p>
