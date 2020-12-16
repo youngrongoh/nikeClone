@@ -1,6 +1,5 @@
 #sub-header {
   background-color: var(--color-white-greyish);
-  width: 100%;
   height: 36px;
   display: flex;
   justify-content: space-between;
@@ -29,4 +28,94 @@
 
 .quick__link {
   padding: 4px 8px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38px;
+  position: relative;
+}
+
+.navbar__home {
+  width: 84px;
+  height: 68px;
+  padding: 0 12px;
+  z-index: 1;
+  line-height: 68px;
+}
+
+.navbar__logo {
+  vertical-align: middle;
+}
+
+.navbar__container {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar__menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navbar__menu-item {
+  padding: 0 12px;
+}
+
+.navbar__link {
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.navbar__search {
+  float: right;
+  background-color: #fff;
+  border-radius: 25px;
+  z-index: 1;
+  position: relative;
+  height: 40px;
+  width: 180px;
+}
+
+.search__btn {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 40px;
+  height: 36px;
+  background-color: transparent;
+  padding: 6px 8px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.search__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.search__input {
+  font-weight: 500;
+  width: 100%;
+  height: 40px;
+  padding: 8px 48px;
+}
+
+.navbar__btns {
+  display: flex;
+}
+
+.navbar__btn {
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  margin-right: 12px;
 }

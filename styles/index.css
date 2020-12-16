@@ -50,6 +50,7 @@ body {
   margin: 0;
   font-family: var(--font-helvetica);
   font-weight: 400;
+  text-align: center;
 }
 
 ul {

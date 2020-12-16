@@ -35,23 +35,35 @@
       </section>
       <nav id="navbar">
         <a href="#" class="navbar__home">
-          <img src="img/nike-logo.svg" alt="logo" />
+          <img src="img/nike-logo.svg" alt="logo" class="navbar__logo" />
         </a>
-        <ul class="navbar__menu">
-          <li class="navbar__menu-item">New Release</li>
-          <li class="navbar__menu-item">Men</li>
-          <li class="navbar__menu-item">Women</li>
-          <li class="navbar__menu-item">Kids</li>
-        </ul>
-        <div class="navbar__search">
-          <img src="img/search.svg" alt="search" class="search__icon">
-          <input type="text" placeholder="Search" class="search__input" />
+        <div class="navbar__container">
+          <ul class="navbar__menu">
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__link">New Release</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__link">Men</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__link">Women</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__link">Kids</a>
+            </li>
+          </ul>
+          <div class="navbar__search">
+            <button class="search__btn">
+              <img src="img/search.svg" alt="search" class="search__icon">
+            </button>
+            <input type="text" placeholder="Search" class="search__input" />
+          </div>
         </div>
         <div class="navbar__btns">
-          <a class="navbar__favorites">
+          <a class="navbar__btn">
             <img src="img/favorites.svg" alt="favorites">
           </a>
-          <a class="navbar__cart">
+          <a class="navbar__btn">
             <img src="img/cart.svg" alt="cart">
           </a>
         </div>
