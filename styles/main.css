@@ -46,9 +46,13 @@
 .banner__btn {
   background-color: var(--color-black);
   color: var(--color-white);
-  font-size: var(--size-regular);
+  font-size: var(--size-medium);
   font-weight: 500;
   height: 40px;
   padding: 8px 28px;
   border-radius: 25px;
+}
+
+.banner__btn:hover {
+  opacity: 0.75;
 }
