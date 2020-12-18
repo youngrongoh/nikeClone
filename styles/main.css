@@ -241,3 +241,25 @@
 .item__price {
   font-weight: var(--weight-bold);
 }
+
+/* Table */
+.table {
+  display: flex;
+  max-width: 920px;
+  justify-content: space-around;
+  text-align: left;
+  padding: 0 20px;
+  margin: 84px auto 0 auto;
+}
+
+.table__title {
+  margin-bottom: 24px;
+}
+
+.table__list {
+  color: var(--color-grey-dark);
+}
+
+.table__hidden {
+  display: none;
+}
