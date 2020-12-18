@@ -4,7 +4,7 @@
 :root {
   /* Font Size */
   --size-mega: 72px;
-  --size-Larger: 24px;
+  --size-larger: 24px;
   --size-large: 20px;
   --size-medium: 16px;
   --size-small: 14px;
@@ -54,6 +54,7 @@ body {
   font-family: var(--font-helvetica);
   font-weight: 400;
   text-align: center;
+  line-height: 1.5;
 }
 
 ul {
@@ -80,4 +81,13 @@ input[type='text'] {
   outline: none;
   background: transparent;
   border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  line-height: 1.5;
 }
