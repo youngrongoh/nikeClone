@@ -65,12 +65,27 @@
 
 .banner__caption--inner {
   position: absolute;
+  text-align: left;
+}
+
+.inner--single-large-lb {
+  left: 5%;
   bottom: 10%;
+}
+
+.inner--twin-lb {
   left: 10%;
+  bottom: 10%;
+}
+
+.inner--triple-lb {
+  left: 11%;
+  bottom: 7%;
 }
 
 .banner__title {
   margin-bottom: 18px;
+  font-weight: var(--weight-bold);
 }
 
 .banner__title--white {
@@ -102,14 +117,6 @@
 
 .banner__btn:hover {
   opacity: 0.75;
-}
-
-.align-left-bottom {
-  text-align: left;
-}
-
-.align-left-bottom.banner__caption--inner {
-  left: 5%;
 }
 
 .caption--wrapper {
