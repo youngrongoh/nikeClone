@@ -1,5 +1,6 @@
 #contents {
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .section-title {
@@ -258,6 +259,10 @@
 
 .table__list {
   color: var(--color-grey-dark);
+}
+
+.table__item {
+  margin-bottom: 20px;
 }
 
 .table__hidden {
