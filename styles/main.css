@@ -77,7 +77,14 @@
   color: var(--color-white);
 }
 
+.banner__title--larger {
+  font-size: var(--size-mega);
+  font-family: var(--font-futura);
+  font-weight: var(--weight-extra-bold);
+}
+
 .banner__btn {
+  display: inline-block;
   background-color: var(--color-black);
   color: var(--color-white);
   font-size: var(--size-medium);
@@ -95,6 +102,22 @@
 
 .banner__btn:hover {
   opacity: 0.75;
+}
+
+.align-left-bottom {
+  text-align: left;
+}
+
+.align-left-bottom.banner__caption--inner {
+  left: 5%;
+}
+
+.caption--wrapper {
+  width: 70%;
+}
+
+.caption--wrapper .banner__title {
+  line-height: 1.1;
 }
 
 /* Slide list */
