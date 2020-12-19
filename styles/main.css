@@ -255,6 +255,7 @@
 
 .table__title {
   margin-bottom: 24px;
+  cursor: default;
 }
 
 .table__list {
@@ -263,6 +264,14 @@
 
 .table__item {
   margin-bottom: 20px;
+}
+
+.table__link {
+  transition: 0.1s ease;
+}
+
+.table__link:hover {
+  color: var(--color-black);
 }
 
 .table__hidden {
