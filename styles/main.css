@@ -2,6 +2,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
   overflow: hidden;
+  max-width: 1808px;
 }
 
 .section-title {
@@ -50,6 +51,7 @@
   transform: translateX(-50%);
   height: 100%;
   display: block;
+  z-index: -1;
 }
 
 .banner__img-wrapper {

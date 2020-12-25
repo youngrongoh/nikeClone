@@ -4,6 +4,11 @@
   padding: 40px 40px 0 40px;
 }
 
+.footer__wrapper {
+  max-width: 1344px;
+  margin: 0 auto;
+}
+
 #service-links {
   display: flex;
   justify-content: space-between;
