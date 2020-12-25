@@ -284,6 +284,7 @@
 .navbar__btns {
   margin-left: 24px;
   display: flex;
+  z-index: 1;
 }
 
 .navbar__btn {

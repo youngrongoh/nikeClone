@@ -285,5 +285,14 @@
 }
 
 .table__hidden {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.table:hover .table__hidden {
+  visibility: visible;
+  opacity: 1;
+  height: 200px;
 }

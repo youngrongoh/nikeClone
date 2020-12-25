@@ -139,7 +139,7 @@
 .policy__modal {
   display: none;
   position: absolute;
-  bottom: 38px;
+  bottom: 33px;
   left: -48px;
   width: 50vw;
   max-width: 580px;
@@ -150,7 +150,11 @@
   z-index: 1;
 }
 
-.policy__show-btn:hover .policy__modal {
+.policy__item--modal:hover {
+  border-top: 2px solid white;
+}
+
+.policy__item--modal:hover .policy__modal {
   display: block;
 }
 
