@@ -421,6 +421,7 @@
   height: 58px;
   border-bottom: 1px solid #e5e5e5;
   order: 3;
+  overflow: hidden;
 }
 
 .slide-banner__wrapper {
