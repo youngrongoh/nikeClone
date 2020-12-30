@@ -325,12 +325,12 @@
 .slidelist__scroll-dragger {
   position: absolute;
   left: 0;
-  width: 1px;
+  /* width: 1px; */
   height: 4px;
   background-color: var(--color-grey-dark);
   border-radius: 4px;
   opacity: 0;
-  cursor: pointer;
+  padding: 0;
   transition: transform 0.2s ease;
 }
 

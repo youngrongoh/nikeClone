@@ -123,7 +123,7 @@ function setSlideScroll(slidelist) {
   const slideWrapper = slidelist.querySelector('.slidelist__listwrapper');
   const scrollbar = slidelist.querySelector('.slidelist__scrollbar');
   const slideList = slidelist.querySelector('.slidelist__list');
-  const dragger = slidelist.querySelector('.slidelist__scroll-dragger');
+  // const dragger = slidelist.querySelector('.slidelist__scroll-dragger');
   const leftBtn = slidelist.querySelector('.slidelist__btn--left');
   const rightBtn = slidelist.querySelector('.slidelist__btn--right');
 
@@ -131,8 +131,11 @@ function setSlideScroll(slidelist) {
   const listWidth = slideList.scrollWidth;
   const wrapperWidth = slideWrapper.getBoundingClientRect().width;
 
+  const dragger = document.createElement('button');
+  dragger.setAttribute('class', 'slidelist__scroll-dragger');
   const draggerWidth = getDraggerWidth(barWidth, wrapperWidth, listWidth);
   dragger.style.width = draggerWidth + 'px';
+  scrollbar.append(dragger);
   setDraggerMoving(
     dragger,
     slideList,
