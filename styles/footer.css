@@ -114,6 +114,7 @@
   position: relative;
   margin-left: 12px;
   padding: 8px;
+  border-top: 2px solid transparent;
 }
 
 .policy__item .policy__link,
