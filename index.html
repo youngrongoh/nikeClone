@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Jost:wght@400;500;900&family=Pragati+Narrow:wght@700&display=swap"
     rel="stylesheet">
-  <script src="js/main.js" defer></script>
+  <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -1328,18 +1328,20 @@
     </section>
   </header>
   <main id="contents">
-    <section id="main-banner" class="banner banner__container">
-      <div class="banner__item">
-        <div class="banner__wrapper">
-          <video class="banner__video" src="videos/main-banner.webm" type="video/webm"
-            poster="videos/main-banner-poster.jpg" loop muted="muted" playsinline="playsinline" preload="auto"
-            autoplay></video>
+    <section id="main-banner" class="banner">
+      <div class="banner__container">
+        <div class="banner__item">
+          <div class="banner__wrapper">
+            <video class="banner__video" src="videos/main-banner.webm" type="video/webm"
+              poster="videos/main-banner-poster.jpg" loop muted="muted" playsinline="playsinline" preload="auto"
+              autoplay></video>
+          </div>
+          <div class="banner__caption">
+            <p class="banner__title">The perfect gift? A challenge they can't resist.</p>
+            <a href="#" class="banner__btn">Shop</a>
+          </div>
+          <a href="#" class="banner__link"></a>
         </div>
-        <div class="banner__caption">
-          <p class="banner__title">The perfect gift? A challenge they can't resist.</p>
-          <a href="#" class="banner__btn">Shop</a>
-        </div>
-        <a href="#" class="banner__link"></a>
       </div>
     </section>
     <section id="gear-up" class="slidelist">
@@ -1463,7 +1465,7 @@
           </button>
         </div>
       </div>
-      <div class="slidelist__scrollbar">
+      <div class="slidelist__scroll-line">
       </div>
     </section>
     <section id="top-gifts" class="banner twin-banner">
@@ -1593,7 +1595,7 @@
           </button>
         </div>
       </div>
-      <div class="slidelist__scrollbar">
+      <div class="slidelist__scroll-line">
       </div>
     </section>
     <section id="just-in" class="banner">
@@ -1849,8 +1851,8 @@
             </li>
           </ul>
           <ul class="lists__list">
-            <li class="lists__item">
-              <a href="#" class="lists__name">About Nike</a>
+            <li class="lists__item lists__item--bold">
+              <a href="#" class="lists__name lists__name--bold">About Nike</a>
             </li>
             <li class="lists__item">
               <a href="#" class="lists__name">News</a>

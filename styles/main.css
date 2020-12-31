@@ -10,7 +10,6 @@
   font-size: var(--size-larger);
   text-align: left;
   margin-bottom: 24px;
-  padding: 0 8px;
 }
 
 #dont-miss,
@@ -20,7 +19,6 @@
 
 /* Banner */
 .banner {
-  position: relative;
   padding: 0 8px;
   margin: 48px 48px 0 48px;
 }
@@ -28,19 +26,17 @@
 .banner__container {
   display: flex;
   justify-content: center;
+  margin: 0 -8px;
 }
 
 .banner__item {
   position: relative;
   margin: 0;
   width: 100%;
-  height: 100%;
   padding: 0 8px;
 }
 
 .banner__wrapper {
-  height: 700px;
-  max-width: 100%;
   overflow: hidden;
 }
 
@@ -49,7 +45,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 100%;
+  width: 100%;
   display: block;
   z-index: -1;
 }
@@ -166,16 +162,19 @@
   white-space: nowrap;
   position: relative;
   width: 100%;
-  padding: 0 8px;
   left: 48px;
+  font-size: 0;
   transition: transform 0.2s ease;
 }
 
 .slidelist__item {
   display: inline-block;
   margin-right: 16px;
-  width: calc((100vw - 154px) / 3);
-  max-width: calc((1808px - 154px) / 3);
+  font-size: 1rem;
+}
+
+.slidelist__item:last-child {
+  margin-right: 0;
 }
 
 .item__wrapper .item__img,
@@ -310,7 +309,7 @@
   height: 18px;
 }
 
-.slidelist__scrollbar {
+.slidelist__scroll-line {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -322,10 +321,9 @@
   transform: translateX(-50%);
 }
 
-.slidelist__scroll-dragger {
+.slidelist__scrollBtn {
   position: absolute;
   left: 0;
-  /* width: 1px; */
   height: 4px;
   background-color: var(--color-grey-dark);
   border-radius: 4px;
@@ -334,12 +332,12 @@
   transition: transform 0.2s ease;
 }
 
-.slidelist:hover .slidelist__scrollbar,
-.slidelist:hover .slidelist__scroll-dragger {
+.slidelist:hover .slidelist__scroll-line,
+.slidelist:hover .slidelist__scrollBtn {
   opacity: 1;
 }
 
-.slidelist__scroll-dragger:active {
+.slidelist__scrollBtn:active {
   background-color: var(--color-black);
 }
 
@@ -349,8 +347,8 @@
   max-width: 920px;
   justify-content: space-around;
   text-align: left;
-  padding: 0 20px;
-  margin: 84px auto 62px auto;
+  padding: 0 20px 48px;
+  margin: 84px auto 0;
 }
 
 .table__title {
@@ -378,7 +376,7 @@
   visibility: hidden;
   opacity: 0;
   height: 0;
-  transition: 0.5s ease;
+  transition: 0.8s ease;
 }
 
 .table:hover .table__hidden {
