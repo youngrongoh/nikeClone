@@ -1,3 +1,4 @@
+'use strict';
 export default class ScrollBuilder {
   set(scrollist) {
     const scroll = new Scrollbar(scrollist);

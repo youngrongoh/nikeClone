@@ -1,3 +1,5 @@
+'use strict';
+
 export default function setAutoSlide() {
   const slideBanner = document.querySelector('.slide-banner__wrapper');
   const slides = slideBanner.children;

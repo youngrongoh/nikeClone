@@ -146,13 +146,32 @@
   position: absolute;
   left: 0;
   width: 100%;
+  height: 67px;
+  overflow: hidden;
 }
 
 .navbar__menu-wrapper {
   display: flex;
   justify-content: center;
-  width: fit-content;
+  flex-wrap: wrap;
+  width: calc(100% - 640px);
   margin: 0 auto;
+}
+
+.navbar__menu-item {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar__menu-item:after {
+  content: '';
+  background: url(../img/next.svg) center/contain no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
 }
 
 .navbar__link {
@@ -161,6 +180,7 @@
   line-height: 68px;
   display: inline-block;
   padding: 0 12px;
+  white-space: nowrap;
 }
 
 .navbar__link:after {
@@ -177,6 +197,102 @@
 
 .navbar__link:hover:after {
   opacity: 1;
+}
+
+.navbar__family {
+  display: none;
+  margin-top: 12px;
+}
+
+.navbar__family .family__link {
+  display: block;
+  width: 100%;
+  line-height: 40px;
+}
+
+.navbar__family .family__logo {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.navbar__family .family__title {
+  font-size: var(--size-medium);
+}
+
+.navbar__account {
+  display: none;
+  margin: 50px 12px 0;
+  padding-top: 48px;
+}
+
+.account__desc {
+  width: 80%;
+  padding-bottom: 16px;
+}
+
+.account__text {
+  color: var(--color-grey-dark);
+  line-height: 1.2;
+}
+
+.account__link {
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+}
+
+.account__btns {
+  margin-top: 8px;
+}
+
+.account__btn {
+  display: inline-block;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: var(--size-medium);
+  font-weight: 500;
+  height: 40px;
+  padding: 8px 24px;
+  border-radius: 25px;
+  margin: 8px 8px 0 0;
+}
+
+.account__btn:hover {
+  opacity: 0.8;
+}
+
+.account__btn--white {
+  background-color: transparent;
+  color: var(--color-black);
+  border: 1px solid var(--color-grey-light);
+}
+
+.account__btn--white:hover {
+  opacity: 1;
+  box-shadow: inset 0 0 3px #00000020;
+}
+
+.navbar__menu .navbar__btns {
+  display: none;
+  margin-top: 50px;
+  font-size: var(--size-medium);
+  font-weight: var(--weight-bold);
+}
+
+.navbar__menu .navbar__btn {
+  display: block;
+  width: 100%;
+  padding: 0 0 12px;
+}
+
+.navbar__menu .navbar__btn:hover {
+  background-color: transparent;
+}
+
+.navbar__btn-icon {
+  vertical-align: middle;
+  margin-right: 12px;
 }
 
 .navbar__dropdown {
@@ -252,16 +368,15 @@
 }
 
 .search__btn {
+  display: flex;
   position: absolute;
-  top: 2px;
   left: 2px;
   width: 40px;
-  height: 36px;
+  height: 40px;
   background-color: transparent;
-  padding: 6px 8px;
-  border-radius: 100px;
-  display: flex;
   align-items: center;
+  border-radius: 100px;
+  padding: 0 8px;
 }
 
 .search__btn:hover {
@@ -329,6 +444,10 @@
   z-index: 3;
 }
 
+#navbar.search-mode .search__exit-btn:hover {
+  background-color: var(--color-grey-bright);
+}
+
 .search__exit-btn:hover {
   background-color: var(--color-grey-bright);
 }
@@ -350,7 +469,7 @@
 }
 
 .search__popular-wrapper {
-  width: 300px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -393,7 +512,27 @@
   transition: 0.8s ease;
 }
 
+.navbar__wrapper:after {
+  content: '';
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(18, 18, 18, 0.36);
+  opacity: 0;
+  z-index: 1;
+  backdrop-filter: blur(4px);
+  transition: 0.8s ease;
+}
+
 #navbar.search-mode .navbar__wrapper:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+#navbar.open-mode .navbar__wrapper:after {
   visibility: visible;
   opacity: 1;
 }
@@ -405,14 +544,31 @@
 }
 
 .navbar__btn {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   padding: 6px;
   margin-right: 12px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .navbar__btn:hover {
+  background-color: var(--color-grey-bright);
+}
+
+.navbar__hamburger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-top: 2px;
+  margin-top: 2px;
+  margin-left: 8px;
+  order: 2;
+  z-index: 2;
+}
+
+.navbar__hamburger:hover {
   background-color: var(--color-grey-bright);
 }
 
@@ -473,4 +629,152 @@
   100% {
     top: 0;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  body.open-mode {
+    overflow-y: hidden;
+  }
+
+  .navbar__wrapper {
+    padding: 0 12px;
+  }
+
+  #sub-header {
+    display: none;
+  }
+
+  .navbar__menu {
+    overflow-y: scroll;
+    top: 0;
+    left: unset;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background-color: var(--color-white);
+    text-align: left;
+    font-size: var(--size-large);
+    padding: 36px 24px 150px;
+    z-index: 3;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+
+  #navbar.open-mode .navbar__menu {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .navbar__menu-wrapper {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 36px;
+  }
+
+  .navbar__menu-item {
+    width: 100%;
+  }
+
+  .navbar__dropdown {
+    display: none;
+  }
+
+  .navbar__menu-item:hover .navbar__dropdown {
+    visibility: hidden;
+  }
+
+  .navbar__menu-wrapper:hover .navbar__dropdown {
+    opacity: 0;
+    transform: unset;
+  }
+
+  .navbar__link {
+    line-height: 48px;
+  }
+
+  .navbar__link:after {
+    display: none;
+  }
+
+  .navbar__family,
+  .navbar__account,
+  .navbar__menu .navbar__btns {
+    display: block;
+  }
+
+  .navbar__search-box {
+    order: 1;
+  }
+
+  .search__tab {
+    background-color: transparent;
+    width: 40px;
+  }
+
+  .search__input {
+    width: 0;
+    padding: 0;
+  }
+
+  .search__input:hover {
+    background-color: transparent;
+  }
+
+  #navbar.search-mode .navbar__home {
+    visibility: hidden;
+  }
+
+  #navbar.search-mode .search__tab {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    background-color: var(--color-white);
+    z-index: 3;
+  }
+
+  #navbar.search-mode .search__input {
+    width: 90%;
+    background-color: var(--color-white-greyish);
+    padding: 8px 48px;
+  }
+
+  #navbar.search-mode .search__btn {
+    left: 24px;
+  }
+
+  .search__popular-wrapper {
+    margin: 0;
+  }
+
+  .search__popular {
+    padding-left: 36px;
+  }
+
+  .navbar__btns {
+    padding-top: 2px;
+  }
+
+  .navbar__btn--fav {
+    display: none;
+  }
+
+  .navbar__btn {
+    margin-right: 8px;
+  }
+
+  .navbar__hamburger {
+    display: block;
+  }
+
+  .slide-banner__contents {
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 640px) {
 }

@@ -7,6 +7,12 @@
   <title>Nike. Just Do it. Nike GB</title>
   <link rel="stylesheet" href="styles/index.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" sizes="192x192" href="./img/favicon/android-icon-192x192.png">
+  <link rel="icon" sizes="128x128" href="./img/favicon/android-icon-128x128.png">
+  <link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-touch-icon-76x76-precomposed.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-touch-icon-152x152-precomposed.png">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Jost:wght@400;500;900&family=Pragati+Narrow:wght@700&display=swap"
     rel="stylesheet">
@@ -1174,6 +1180,53 @@
               </div>
             </li>
           </ul>
+          <ul class="navbar__family">
+            <li class="family__link">
+              <a href="#">
+                <img class="family__logo" src="./img/jordan.svg" alt="jordan">
+                <span class="family__title">Jordan</span>
+              </a>
+            </li>
+            <li class="family__link">
+              <a href="#">
+                <img class="family__logo" src="./img/converse.svg" alt="converse">
+                <span class="family__title">Converse</span>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar__account">
+            <div class="account__desc">
+              <p class="account__text">
+                Become a Nike Member for the best products, inspiration and storis in sport.
+                <a class="account__link" href="#">Learn more</a>
+              </p>
+
+            </div>
+            <div class="account__btns">
+              <a class="account__btn account__btn" href="">Join Us</a>
+              <button class="account__btn account__btn--white">Sign In</button>
+            </div>
+          </div>
+          <ul class="navbar__btns">
+            <li class="navbar__btn">
+              <a href="#">
+                <img class="navbar__btn-icon" src="./img/cart.svg" alt="bag">
+                <span class="navbar__btn-text">Bag</span>
+              </a>
+            </li>
+            <li class="navbar__btn">
+              <a href="#">
+                <img class="navbar__btn-icon" src="./img/order.svg" alt="order">
+                <span class="navbar__btn-text">Order</span>
+              </a>
+            </li>
+            <li class="navbar__btn">
+              <a href="#">
+                <img class="navbar__btn-icon" src="./img/help.svg" alt="help">
+                <span class="navbar__btn-text">Help</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="navbar__container">
           <div class="navbar__search-box">
@@ -1184,9 +1237,9 @@
                 </button>
                 <input type="text" placeholder="Search" class="search__input" />
               </div>
-              <div class="search__exit-btn">
+              <button class="search__exit-btn">
                 <img src="img/exit.svg" alt="exit search" class="search__exit-icon">
-              </div>
+              </button>
             </div>
             <div class="search__popular">
               <div class="search__popular-wrapper">
@@ -1209,13 +1262,16 @@
             </div>
           </div>
           <div class="navbar__btns">
-            <a class="navbar__btn">
+            <a class="navbar__btn navbar__btn--fav">
               <img src="img/favorites.svg" alt="favorites">
             </a>
             <a class="navbar__btn">
               <img src="img/cart.svg" alt="cart">
             </a>
           </div>
+          <button class="navbar__hamburger">
+            <img src="./img/hamburger.svg" alt="hamburger menu">
+          </button>
         </div>
       </div>
     </nav>

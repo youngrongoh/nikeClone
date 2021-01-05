@@ -1,3 +1,5 @@
+'use strict';
+
 function AddSearchMode(navbar) {
   if (!navbar.classList.contains('search-mode')) {
     navbar.classList.add('search-mode');

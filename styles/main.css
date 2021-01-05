@@ -384,3 +384,9 @@
   opacity: 1;
   height: 200px;
 }
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 640px) {
+}
